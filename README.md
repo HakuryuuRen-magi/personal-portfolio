@@ -25,7 +25,7 @@ This is a **Personal Portfolio Website** built using **React**. It showcases my 
 
 ## Installation
 
-To set up the project locally, follow these steps:
+To set up the project locally, follow these steps :
 
 ### 1. Clone the repository
 
