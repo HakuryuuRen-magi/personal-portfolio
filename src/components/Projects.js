@@ -136,13 +136,19 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Project 1</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">Project 2</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                        <Nav.Link eventKey="third">Project 3</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="fourth">Project 4</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="fifth">Project 5</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -241,6 +247,102 @@ export const Projects = () => {
                         </div>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
+                        <p>
+                          {" "}
+                          <strong>Article Summarizer</strong> is an AI-powered
+                          web application that utilizes advanced{" "}
+                          <strong>Natural Language Processing (NLP)</strong>{" "}
+                          techniques based on{" "}
+                          <strong>TextRank Algorithmn</strong> to automatically
+                          generate concise summaries from lengthy articles. By
+                          applying cutting-edge AI models, the application is
+                          able to understand and extract the most important
+                          points, allowing users to grasp key insights without
+                          reading the full text. This tool streamlines the
+                          information consumption process, making it ideal for
+                          students, professionals, and researchers dealing with
+                          large volumes of content. The web application ensures
+                          fast and accurate results, driven by modern machine
+                          learning algorithms and a user-friendly interface.{" "}
+                        </p>
+
+                        <Row>
+                          {projects_3.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
+                        <div
+                          className="github-link-section"
+                          style={{ marginTop: "20px", textAlign: "center" }}
+                        >
+                          <a
+                            href="https://github.com/HakuryuuRen-magi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary"
+                            style={{
+                              display: "inline-block",
+                              padding: "10px 20px",
+                              backgroundColor: "rgba(90, 103, 216, 0.8)", // RGBA with 0.8 transparency
+                              color: "#fff",
+                              textDecoration: "none",
+                              borderRadius: "5px",
+                              transition: "background-color 0.3s ease", // smooth hover transition
+                            }}
+                          >
+                            View on GitHub
+                          </a>
+                        </div>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="fourth">
+                        <p>
+                          {" "}
+                          <strong>Article Summarizer</strong> is an AI-powered
+                          web application that utilizes advanced{" "}
+                          <strong>Natural Language Processing (NLP)</strong>{" "}
+                          techniques based on{" "}
+                          <strong>TextRank Algorithmn</strong> to automatically
+                          generate concise summaries from lengthy articles. By
+                          applying cutting-edge AI models, the application is
+                          able to understand and extract the most important
+                          points, allowing users to grasp key insights without
+                          reading the full text. This tool streamlines the
+                          information consumption process, making it ideal for
+                          students, professionals, and researchers dealing with
+                          large volumes of content. The web application ensures
+                          fast and accurate results, driven by modern machine
+                          learning algorithms and a user-friendly interface.{" "}
+                        </p>
+
+                        <Row>
+                          {projects_3.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
+                        <div
+                          className="github-link-section"
+                          style={{ marginTop: "20px", textAlign: "center" }}
+                        >
+                          <a
+                            href="https://github.com/HakuryuuRen-magi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="btn btn-primary"
+                            style={{
+                              display: "inline-block",
+                              padding: "10px 20px",
+                              backgroundColor: "rgba(90, 103, 216, 0.8)", // RGBA with 0.8 transparency
+                              color: "#fff",
+                              textDecoration: "none",
+                              borderRadius: "5px",
+                              transition: "background-color 0.3s ease", // smooth hover transition
+                            }}
+                          >
+                            View on GitHub
+                          </a>
+                        </div>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="fifth">
                         <p>
                           {" "}
                           <strong>Article Summarizer</strong> is an AI-powered
