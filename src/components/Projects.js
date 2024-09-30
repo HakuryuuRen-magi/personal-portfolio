@@ -26,6 +26,10 @@ import personal4 from "../assets/img/personal_4.png";
 import personal5 from "../assets/img/personal_5.png";
 import personal6 from "../assets/img/personal_6.png";
 
+import cgpt1 from "../assets/img/gpt1.png";
+import cgpt2 from "../assets/img/gpt2.png";
+
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -144,6 +148,19 @@ export const Projects = () => {
       imgUrl: personal6,
     },
   ];
+  const projects_5 = [
+    {
+      title: "Chatbot OpenAI",
+      description: "Home Page",
+      imgUrl: cgpt1,
+    },
+    {
+      title: "ChatBot OpenAI",
+      description: "Chat",
+      imgUrl: cgpt2,
+    },
+  ];
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -383,26 +400,22 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="fifth">
                         <p>
-                          {" "}
-                          <strong>Article Summarizer</strong> is an AI-powered
-                          web application that utilizes advanced{" "}
-                          <strong>Natural Language Processing (NLP)</strong>{" "}
-                          techniques based on{" "}
-                          <strong>TextRank Algorithmn</strong> to automatically
-                          generate concise summaries from lengthy articles. By
-                          applying cutting-edge AI models, the application is
-                          able to understand and extract the most important
-                          points, allowing users to grasp key insights without
-                          reading the full text. This tool streamlines the
-                          information consumption process, making it ideal for
-                          students, professionals, and researchers dealing with
-                          large volumes of content. The web application ensures
-                          fast and accurate results, driven by modern machine
-                          learning algorithms and a user-friendly interface.{" "}
+                          This project is a <strong>web application</strong>{" "}
+                          that integrates the{" "}
+                          <strong>OpenAI ChatGPT API</strong> to provide users
+                          with a <strong>conversational interface</strong>.
+                          Built with <strong>Next.js</strong> and{" "}
+                          <strong>React</strong>, it allows users to interact
+                          with the AI in real-time, sending messages and
+                          receiving responses. The user-friendly design features
+                          a dynamic <strong>chat log</strong>, a typing
+                          animation, and robust error handling, showcasing the
+                          capabilities of{" "}
+                          <strong>AI-driven conversational agents</strong>.
                         </p>
 
                         <Row>
-                          {projects_3.map((project, index) => {
+                          {projects_5.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
