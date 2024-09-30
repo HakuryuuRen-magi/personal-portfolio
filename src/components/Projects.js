@@ -19,6 +19,13 @@ import Summarize3 from "../assets/img/Summarize_3.png";
 import Summarize4 from "../assets/img/Summarize_4.png";
 import Summarize5 from "../assets/img/Summarize_5.png";
 
+import personal1 from "../assets/img/personal_1.png";
+import personal2 from "../assets/img/personal_2.png";
+import personal3 from "../assets/img/personal_3.png";
+import personal4 from "../assets/img/personal_4.png";
+import personal5 from "../assets/img/personal_5.png";
+import personal6 from "../assets/img/personal_6.png";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -103,6 +110,38 @@ export const Projects = () => {
       title: "Article Summarizer",
       description: "Article Summarized",
       imgUrl: Summarize5,
+    },
+  ];
+  const projects_4 = [
+    {
+      title: "Personal Portofolio",
+      description: "Home",
+      imgUrl: personal1,
+    },
+    {
+      title: "Personal Portofolio",
+      description: "Skills",
+      imgUrl: personal2,
+    },
+    {
+      title: "Personal Portofolio",
+      description: "Projects",
+      imgUrl: personal3,
+    },
+    {
+      title: "Personal Portofolio",
+      description: "Project Cards",
+      imgUrl: personal4,
+    },
+    {
+      title: "Personal Portofolio",
+      description: "Contact Me",
+      imgUrl: personal5,
+    },
+    {
+      title: "Personal Portofolio",
+      description: "Card Description",
+      imgUrl: personal6,
     },
   ];
   return (
@@ -296,26 +335,26 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="fourth">
                         <p>
-                          {" "}
-                          <strong>Article Summarizer</strong> is an AI-powered
-                          web application that utilizes advanced{" "}
-                          <strong>Natural Language Processing (NLP)</strong>{" "}
-                          techniques based on{" "}
-                          <strong>TextRank Algorithmn</strong> to automatically
-                          generate concise summaries from lengthy articles. By
-                          applying cutting-edge AI models, the application is
-                          able to understand and extract the most important
-                          points, allowing users to grasp key insights without
-                          reading the full text. This tool streamlines the
-                          information consumption process, making it ideal for
-                          students, professionals, and researchers dealing with
-                          large volumes of content. The web application ensures
-                          fast and accurate results, driven by modern machine
-                          learning algorithms and a user-friendly interface.{" "}
+                          <strong>Personal Portfolio</strong> is a modern and
+                          interactive web-based platform designed to showcase my{" "}
+                          <strong>professional skills</strong> and{" "}
+                          <strong>projects</strong>. Built using{" "}
+                          <strong>React</strong>, this portfolio offers an
+                          organized way to present key details about my
+                          expertise in <strong>web development</strong>,{" "}
+                          <strong>machine learning</strong>, and{" "}
+                          <strong>software engineering</strong>. It includes
+                          various sections such as <strong>About Me</strong>,{" "}
+                          <strong>Skills</strong>, <strong>Projects</strong>,
+                          and <strong>Contact</strong>, providing a
+                          comprehensive overview of my work. The portfolio is
+                          designed to be responsive and user-friendly, allowing
+                          potential employers and collaborators to easily
+                          navigate and connect with me.
                         </p>
 
                         <Row>
-                          {projects_3.map((project, index) => {
+                          {projects_4.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
